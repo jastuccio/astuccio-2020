@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
 import { Flex } from "@theme-ui/components"
-// import useSiteMetadata from "../hooks/use-site-metadata"
-// import useSiteMetadata from "../../../../node_modules/@lekoarts/gatsby-theme-minimal-blog/src/hooks"
+import { Link } from 'gatsby'
 import useSiteMetadata from "../../../../node_modules/@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata"
 
 const Footer = () => {
@@ -22,9 +21,9 @@ const Footer = () => {
         flexDirection: [`column`, `column`, `row`],
       }}
     >
-      <div>
-        &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
-      </div>
+      <Link to="/uncopyright/">
+        uncopyright
+      </Link>
       {/*
       <div>
         <Styled.a
