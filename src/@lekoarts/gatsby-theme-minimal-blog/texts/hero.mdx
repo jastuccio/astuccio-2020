@@ -1,6 +1,9 @@
 <!-- import List from '@lekoarts/gatsby-theme-minimal-blog/src/components/list' -->
 
-import ProjectSummary from '../components/ProjectSummary.tsx'
+<!-- import ProjectSummary from '../components/ProjectSummary.tsx' -->
+import Title from '@lekoarts/gatsby-theme-minimal-blog/src/components/title';
+
+import FeaturedProjectsListItem from '../components/FeaturedProjectsListItem.tsx'
 
 <Text sx={{ fontSize: [4, 5, 6], fontWeight: `bold`, color: `heading` }}>
   Hi.
@@ -13,8 +16,17 @@ I build interesting things using React, Gatsby, Svelte, JavaScript, HTML, CSS, S
 
 <Title text="Projects" />
 
-<ProjectSummary
+<FeaturedProjectsListItem 
+  href="https://jva-eatery.netlify.com/"
+  title="Eatery"
+  description="A restaurant website"
+  imgPath="https://res.cloudinary.com/jastuccio/image/upload/v1577152945/sites/eatery.png"
+/>
+
+<!-- <Projects /> -->
+
+<!-- <ProjectSummary
   name='Eatery Cafe'
   desc='A restaurant site built using Gatsby JS'
   href='https://jva-eatery.netlify.com/'
-/>
+/> -->

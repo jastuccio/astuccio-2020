@@ -1,0 +1,39 @@
+---
+title: Creating internal links in Gatsby MDX files
+date: 2019-12-19
+description: How to create internal links in Gatsby MDX files
+tags:
+banner: 
+---
+//tags: GatsbyJS
+
+>The Gatsby `<Link />` component is for linking between pages within your site. For external links to pages not handled by your Gatsby site, use the regular HTML `<a>` tag.
+
+This pre-fetches resources providing fast performance. You can [Read more about `<Link>`](https://www.gatsbyjs.org/docs/gatsby-link/)
+
+an example of using `<Link>` in your blog in an MDX file:
+
+```mdx
+---
+front matter:
+...
+---
+
+import {Link} from 'gatsby'
+
+...content
+
+<Link to="/<path>/">an internal page</<Link>
+
+...more content
+
+<a href="www.external.com" alt="an external link">
+```
+
+lines 1 -4 are "front matter"  This fields can vary depending  on your theme.
+
+line 6 imports link just like we would in a js file.
+
+line 10 is the internal link.  You can use as many as you need per page
+
+

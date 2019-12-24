@@ -2,8 +2,12 @@
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 import Layout from '@lekoarts/gatsby-theme-minimal-blog/src/components/layout';
-import Hero from '@lekoarts/gatsby-theme-minimal-blog/src/texts/hero.mdx';
-import Bottom from '@lekoarts/gatsby-theme-minimal-blog/src//texts/bottom.mdx';
+
+
+// import Hero from '@lekoarts/gatsby-theme-minimal-blog/src/texts/hero.mdx';
+import Hero from '@lekoarts/gatsby-theme-minimal-blog/src/texts/hero'
+
+// import Bottom from '@lekoarts/gatsby-theme-minimal-blog/src/texts/bottom.mdx';
 
 import Title from '@lekoarts/gatsby-theme-minimal-blog/src/components/title';
 
@@ -33,9 +37,9 @@ const Homepage = ({ posts }: PostsProps) => {
         <Hero />
       </section>
 
-      <List>
+      {/* <List>
         <Bottom />
-      </List>
+      </List> */}
 
       <Title text='Latest Posts'>
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
