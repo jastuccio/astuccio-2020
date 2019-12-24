@@ -1,6 +1,6 @@
 require(`dotenv`).config({
-  path: `.env`,
-})
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   siteMetadata: {
@@ -79,5 +79,23 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-theme-ui`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-cloudinary',
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+
+        // This folder will be created if it doesn’t exist.
+        uploadFolder: 'astuccio-2020-blog',
+      },
+    },
   ],
 }
