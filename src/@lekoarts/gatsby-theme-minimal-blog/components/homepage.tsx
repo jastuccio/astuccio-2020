@@ -5,7 +5,7 @@ import Layout from '@lekoarts/gatsby-theme-minimal-blog/src/components/layout';
 
 
 // import Hero from '@lekoarts/gatsby-theme-minimal-blog/src/texts/hero.mdx';
-import Hero from '@lekoarts/gatsby-theme-minimal-blog/src/texts/hero'
+import Hero from '@lekoarts/gatsby-theme-minimal-blog/src/texts/hero.mdx'
 
 // import Bottom from '@lekoarts/gatsby-theme-minimal-blog/src/texts/bottom.mdx';
 
